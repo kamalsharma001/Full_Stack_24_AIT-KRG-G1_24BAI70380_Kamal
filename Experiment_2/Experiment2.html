@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireGrid</title>
+    <style>
+        .navbar{
+            display : flex;
+            justify-content: space-between;   
+            background-color: white;
+            align-items: center;
+            font-size: larger;
+            flex-wrap: wrap;
+            border-radius: 4px;
+        }
+        #navlogo{
+            background-color: white;;
+            margin-left: 20px;
+        }
+        #navlinks{
+            display: flex;
+            background-color: white;
+            gap: 40px;
+            margin-right: 40px;
+        }
+        #navlinks a{
+            border : none;
+            text-decoration: none;
+            background-color: white;
+            color : navy;
+            font-size:large;
+            padding: 5px;
+            font-weight: bold;
+        }
+        #navlinks a:hover{
+            border : 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        #heroline{
+            margin : 30px 20px 15px 20px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            color :navy;
+            font-size: xx-large;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(236, 237, 238);
+            align-items: center;
+            border-radius: 4px;
+        }
+        .herosearch{
+            padding: 15px 20px 30px 20px ; 
+        }
+        #searchbar{
+            text-align: center;
+            width: 300px;
+            border-radius: 5px;
+            height: 25px;
+            border: none;
+        }
+        #searchbar:hover{
+            border : 2px solid rgb(100, 127, 228)
+        }
+        #searchbutton{
+            font-weight: bolder;
+            text-align: center;
+            color : white;
+            width : 100px;
+            background-color: rgb(100, 127, 228);
+            border-radius: 5px;
+            height : 30px;
+            padding: 5px;
+            border : 2px none;
+            margin-left: 20px;
+        }
+        #searchbutton:hover{
+            background-color: white;
+            border : 2px solid rgb(100, 127, 228);
+            color:rgb(100, 127, 228);
+        }
+        .cards{
+            display:flex;
+            flex-direction: row;
+            border : none;
+            align-items  : center;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .cards button{
+            margin-top : 10px;
+            height : 30px;
+            width : 80px;
+            background-color: white;
+            border-radius : 4px;
+            font-weight: bold;
+            border : 2px solid rgb(100, 127, 228);
+            color : rgb(100, 127, 228);
+            
+        }
+        .cards button:hover{
+            background-color: rgb(100, 127, 228);
+            color : white;
+        }
+        .card{
+            border: none;
+            background-color :rgb(100, 127, 228); 
+            color : white;
+            margin : 10px;
+            padding : 20px;
+            border-radius : 10px;
+            line-height: 1.5;
+            text-align: center;
+            width : 250px;
+        }
+        .card:hover{
+            border:2px solid rgb(100, 127, 228);
+            color: rgb(100,127,228);
+            background-color: white;
+        }
+        .featured{
+            margin-top:40px;
+            padding : 10px 20px;
+            background-color: rgb(236, 237, 238);
+        }
+        .footer{
+        text-align: center;
+        padding: 15px;
+        background-color: rgb(236, 237, 238);
+        color:black;
+        margin-top: 40px;
+        font-size: small;
+        border-radius:4px;
+        }   
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="navlogo">
+            <img src="HireGrid Logo.png" width="200">
+        </div>
+        <div id="navlinks">
+            <a href="#Find Jobs">Find Jobs</a>
+            <a href="#Login">Login</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1 id="heroline">FIND YOUR DREAM JOBS</h1>
+        <h2>Want to Search Anything ?</h2>
+        <div class="herosearch">
+            <label>Search Here :</label>
+            <input type="text" placeholder="Enter job title or keyword" id="searchbar">
+            <button id="searchbutton">Search</button>
+        </div>    
+    </div>
+    <div class="featured">
+        <h2>Featured Jobs : </h2>
+        <div class="cards">
+            <div class="card">
+                <h2>Software Developer</h2>
+                <h3>Antier Tech</h3>
+                Mode : Hybrid<br>
+                Experience : 2yrs+<br>
+                <button>Apply</button>
+            </div>
+            <div class="card">
+                <h2>FrontEnd Developer</h2>
+                <h3>Glance AI</h3>
+                Mode: Work from Home<br>
+                Experience : Freshers<br>
+                <button>Apply</button>
+            </div>
+            <div class="card">
+                <h2>Solutions Architect</h2>
+                <h3>ZScaler</h3>
+                Mode:Remote<br>
+                Experience : 4yrs+<br>
+                <button>Apply</button>
+            </div>
+            <div class="card">
+                <h2>DevOPS Engineer</h2>
+                <h3>Accenture</h3>
+                Mode:Hybrid<br>
+                Experience : 3yrs+<br>
+                <button>Apply</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <p>© 2026 HireGrid. All rights reserved.</p>
+    </div>
+</body>
+</html>
