@@ -392,31 +392,7 @@
             document.getElementById("searchForm").reset();
         });
 
-        document.getElementById("jobPostForm").addEventListener("submit",function(event){
-            event.preventDefault();
-
-            var jobTitle = document.getElementById("jobTitle").value;
-            var companyName = document.getElementById("companyName").value;
-            var mode = document.getElementById("mode").value;
-            var jobExperience = document.getElementById("jobExperience").value;
-            var jobLocation = document.getElementById("jobLocation").value;
-
-            var newcard=document.createElement("div");
-            newcard.classList.add("card");
-
-            newcard.innerHTML=`
-                <h2>${jobTitle}</h2>
-                <h3>${companyName}</h3>
-                Mode: ${mode}<br>
-                Experience: ${jobExperience}<br>
-                Location: ${jobLocation}<br>
-                <button>Apply</button>
-            `;
-
-            document.querySelector(".cards").appendChild(newcard);
-
-            document.getElementById("jobPostForm").reset();
-        });
+        
     </script>
 </body>
 </html>
